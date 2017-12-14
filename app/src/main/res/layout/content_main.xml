@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SelectKeys"
+    tools:showIn="@layout/content_main">
+
+  <!--  <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layoutManager="LinearLayoutManager" />-->
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+<!--    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    </android.support.v7.widget.Toolbar>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:id="@+id/tagcontainerLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:padding="10dp"
+                app:container_enable_drag="true"
+                app:horizontal_interval="10dp"
+                app:tag_clickable="true"
+                app:tag_enable_cross="true"
+                app:tag_theme="pure_teal"
+                app:vertical_interval="10dp" />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/text_tag"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:singleLine="true" />
+                        <ImageView
+                            android:id="@+id/btn_add_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/text_tag"
+                            android:src="@android:drawable/ic_input_add"/>
+                        <!--<Button
+                            android:id="@+id/btn_add_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="add tag" />-->
+                    </LinearLayout>
+                    <ListView
+                        android:id="@+id/list_view"
+                        android:layout_width="fill_parent"
+                        android:layout_below="@+id/box"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+   <!-- </ScrollView>-->
+</LinearLayout>

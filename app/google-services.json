@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "709165090898",
+    "firebase_url": "https://betakabaldb.firebaseio.com",
+    "project_id": "betakabaldb",
+    "storage_bucket": "betakabaldb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709165090898:android:47eabe27617ef7d0",
+        "android_client_info": {
+          "package_name": "com.kabal.qa.quickstart.database"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709165090898-f4fj8glsoqg62fp2e97ou7osgsvs421i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kabal.qa.quickstart.database",
+            "certificate_hash": "93b9c13aa49c55e1f728d5f37e139817f413d9e4"
+          }
+        },
+        {
+          "client_id": "709165090898-n00ke102p1f4o6iud1mlbniv9m4b5ktn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kabal.qa.quickstart.database",
+            "certificate_hash": "d4fa636915d8b2bd8248b8c1e9bea0073ca4eaf8"
+          }
+        },
+        {
+          "client_id": "709165090898-vcnbmnbrrcno13j9h7khbim6pgc5rauq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kabal.qa.quickstart.database",
+            "certificate_hash": "b04d00b7e5b41078455b956a240c2abc43b83e70"
+          }
+        },
+        {
+          "client_id": "709165090898-gpji1h8h21k1dgqfsah17g0oe1vofbo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdnOwt3PYpYVUZy2HHZb6zSdviFK22i0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709165090898-gpji1h8h21k1dgqfsah17g0oe1vofbo1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

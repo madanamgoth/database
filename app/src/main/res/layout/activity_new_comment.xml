@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kabal.qa.quickstart.database.NewPostActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar11"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar11">
+
+    <TextView
+        android:id="@+id/post_title_comment"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        tools:text="My First Post" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0288D1"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:background="#1dcaff"
+                android:text="Add Tags" />
+
+            <ImageButton
+                android:id="@+id/action_undo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/undo"
+                />
+
+            <ImageButton
+                android:id="@+id/action_redo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/redo"
+                />
+
+            <ImageButton
+                android:id="@+id/action_bold"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/bold"
+                />
+
+            <ImageButton
+                android:id="@+id/action_italic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/italic"
+                />
+
+            <ImageButton
+                android:id="@+id/action_underline"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/underline"
+                />
+            <ImageButton
+                android:id="@+id/action_txt_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/txt_color"
+                />
+
+            <ImageButton
+                android:id="@+id/action_align_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/justify_left"
+                />
+
+            <ImageButton
+                android:id="@+id/action_align_center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/justify_center"
+                />
+
+            <ImageButton
+                android:id="@+id/action_align_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/justify_right"
+                />
+
+            <ImageButton
+                android:id="@+id/action_insert_bullets"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/bullets"
+                />
+            <ImageButton
+                android:id="@+id/action_insert_link"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/insert_link"
+                />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+       <!-- <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press To Add Tags" />
+-->
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/editor_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+</RelativeLayout>
